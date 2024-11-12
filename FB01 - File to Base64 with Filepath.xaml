@@ -1,0 +1,146 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="T01___File_to_Base64" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="T01___File_to_Base64_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="T01___File_to_Base64" sap:VirtualizedContainerService.HintSize="1841,1000" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="input_filepath" />
+      <Variable x:TypeArguments="x:String" Name="output_base64" />
+      <Variable x:TypeArguments="x:String" Name="output_error" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="468,197" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[input_filepath]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">UiPath.png</InArgument>
+        </Assign.Value>
+      </Assign>
+    </Sequence>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="468,260" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="File to Base64 - Invoke Workflow File (File to Base64.xaml)" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="File to Base64.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="in_filepath">[input_filepath]</InArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_error">[output_error]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_base64">[output_base64]</OutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="468,520" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="416,223" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_1" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+        <uta:VerifyExpressionWithOperator.FirstExpression>
+          <InArgument x:TypeArguments="x:String">[output_base64]</InArgument>
+        </uta:VerifyExpressionWithOperator.FirstExpression>
+        <uta:VerifyExpressionWithOperator.SecondExpression>
+          <InArgument x:TypeArguments="x:String">["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"]</InArgument>
+        </uta:VerifyExpressionWithOperator.SecondExpression>
+      </uta:VerifyExpressionWithOperator>
+      <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="416,214" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_2" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+        <uta:VerifyExpressionWithOperator.FirstExpression>
+          <InArgument x:TypeArguments="x:String">[output_error]</InArgument>
+        </uta:VerifyExpressionWithOperator.FirstExpression>
+        <uta:VerifyExpressionWithOperator.SecondExpression>
+          <InArgument x:TypeArguments="x:String">[""]</InArgument>
+        </uta:VerifyExpressionWithOperator.SecondExpression>
+      </uta:VerifyExpressionWithOperator>
+    </Sequence>
+  </Sequence>
+</Activity>

@@ -1,0 +1,110 @@
+{
+  "name": "Base64 Converter",
+  "projectId": "298a19fe-7d47-4759-bf98-fbba7760dc26",
+  "description": "This package contains activities to encode and decode files to and from Base64.",
+  "main": "NewActivity.xaml",
+  "dependencies": {
+    "UiPath.System.Activities": "24.10.6",
+    "UiPath.Testing.Activities": "24.10.3",
+    "UiPath.UIAutomation.Activities": "24.10.6"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "24.10.6.0",
+  "projectVersion": "1.0.4",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Library",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "12f0583a-285f-4589-a949-1ffe57b8a18f",
+        "testCaseType": "TestCase",
+        "fileName": "FB01 - File to Base64 with Filepath.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "7f404622-334a-4c0b-9fd5-ef5cb24c4c45",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "FB02 - File to Base64 with Empty Filepath.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "119c20c9-d9f0-411a-aa71-2b3de214d2f4",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "FB03 - File to Base64 with File Not Found.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "84ba5fd2-ff2d-47c0-b6a2-a868400e011f",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "FB04 - File to Base64 with No Filepath.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a665cc08-9aaf-49af-8194-37fc67136ac0",
+        "testCaseType": "TestCase",
+        "fileName": "BF01 - Base64 to File with Filepath.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "9a188870-e068-4cf1-ba10-22681e41954b",
+        "testCaseType": "TestCase",
+        "fileName": "BF02 - Base64 to File with Empty Filepath.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "38400d03-f786-4939-89a5-2d011242e5c3",
+        "testCaseType": "TestCase",
+        "fileName": "BF03 - Base64 to File with No Filepath.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "5c1fb381-d31e-440e-a233-2f0284173f56",
+        "testCaseType": "TestCase",
+        "fileName": "BF04 - Base64 to File with Empty Base64.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e6e5cf41-8d2c-46df-99b9-38a1ca1a3bf5",
+        "testCaseType": "TestCase",
+        "fileName": "BF05 - Base64 to File with No Base64.xaml"
+      }
+    ],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

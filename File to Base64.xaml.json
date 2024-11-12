@@ -1,0 +1,45 @@
+{
+  "DisplayName": "File to Base64",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_filepath",
+      "DisplayName": "Filepath",
+      "Category": null,
+      "Tooltip": "The location of the file to read from e.g. C:\\Downloads\\MyFile.pdf",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "out_base64",
+      "DisplayName": "Base64",
+      "Category": null,
+      "Tooltip": "The Base64 encoded output.",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "out_error",
+      "DisplayName": "Error",
+      "Category": null,
+      "Tooltip": "Error message if conversion failed.",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}

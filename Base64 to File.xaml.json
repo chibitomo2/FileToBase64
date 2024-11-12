@@ -1,0 +1,45 @@
+{
+  "DisplayName": "Base64 to File",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_base64",
+      "DisplayName": "Base64",
+      "Category": null,
+      "Tooltip": "The Base64 encoded string of the file",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_filepath",
+      "DisplayName": "Filepath",
+      "Category": null,
+      "Tooltip": "The location of the file to write to e.g. C:\\Downloads\\MyFile.pdf",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "out_error",
+      "DisplayName": "Error",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}
