@@ -1,0 +1,2 @@
+﻿Copyright UiPath 2025
+LEGAL NOTICE: By installing and/or using this software, you (individual or legal entity) agree to the applicable LICENSE AGREEMENT indicated here: https://www.uipath.com/legal/trust-and-security/legal-terms. Please read it carefully. If you do not accept the license agreement, do not install or use the software and delete it from your computer.
